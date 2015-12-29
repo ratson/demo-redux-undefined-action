@@ -15,5 +15,5 @@ function Home({ number, increase, decrease }) {
 
 module.exports = connect(
   state => ({ number: state.count.number }),
-  { increase, decrease }
+  { increase() {}, decrease }
 )(Home);

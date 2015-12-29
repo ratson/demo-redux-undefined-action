@@ -18,9 +18,10 @@
     "redux-devtools": "^3.0.0",
     "redux-devtools-dock-monitor": "^1.0.1",
     "redux-devtools-log-monitor": "^1.0.1",
-    "webpack": "^1.12.6"
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
-    "start": "webpack --watch"
+    "preinstall": "cd ../.. && npm install",
+    "start": "webpack && webpack-dev-server"
   }
 }
